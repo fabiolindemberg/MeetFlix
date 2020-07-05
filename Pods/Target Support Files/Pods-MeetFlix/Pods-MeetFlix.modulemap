@@ -1,0 +1,6 @@
+framework module Pods_MeetFlix {
+  umbrella header "Pods-MeetFlix-umbrella.h"
+
+  export *
+  module * { export * }
+}
