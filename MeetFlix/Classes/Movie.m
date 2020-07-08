@@ -28,6 +28,21 @@
     rickAndMorty.progress = 0.95;
     
     [movies addObject: rickAndMorty];
+
+    Movie * cars = [Movie new];
+    cars.title = @"Rick and Morty";
+    cars.coverURL = @"https://www.mobygames.com/images/covers/l/409089-disney-pixar-cars-3-driven-to-win-playstation-3-front-cover.png";
+    cars.text = @"The show revolves around the adventures of the members of the Smith household, which consists of parents Jerry and Beth, their children Summer and Morty, and Beth's father, Rick Sanchez, who lives with them as a guest.";
+    cars.age = 16;
+    cars.year = @"2013";
+    cars.temp = @"4 seasons";
+    cars.casting = @"Starring: Justin Roiland, Chris Parnell, Spencer Grammer";
+    cars.creators = @"Creators: Dan Harmon, Justin Roiland";
+    cars.time = @"Time remaining: 8m";
+    cars.relevant = @"100% relevant";
+    cars.progress = 0.95;
+    
+    [movies addObject: cars];
     
     return movies;
 }
