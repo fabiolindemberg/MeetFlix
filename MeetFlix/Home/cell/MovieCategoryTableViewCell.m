@@ -12,6 +12,7 @@
 @implementation MovieCategoryTableViewCell
 
 - (void)awakeFromNib {
+    
     [super awakeFromNib];
     _cvMovie.delegate = self;
     _cvMovie.dataSource = self;
@@ -19,11 +20,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
-
-
 
 # pragma collectionViewDelegate/datasource
 
@@ -43,6 +40,10 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
         return self.presenter.movies.count;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(133.33, 200);
 }
 
 @end

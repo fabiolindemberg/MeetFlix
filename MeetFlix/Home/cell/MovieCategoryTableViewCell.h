@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MovieCategoryTableViewCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface MovieCategoryTableViewCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) HomePresenter * presenter;
 @property (weak, nonatomic) IBOutlet UICollectionView * cvMovie;
