@@ -12,6 +12,9 @@
 		4919195D24B51549008B7E6F /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919195C24B51549008B7E6F /* HomePresenter.m */; };
 		4919196124B539A1008B7E6F /* MovieCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919196024B539A1008B7E6F /* MovieCategoryTableViewCell.m */; };
 		4919196424B54526008B7E6F /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919196324B54526008B7E6F /* MovieCollectionViewCell.m */; };
+		496C4EEA24C7881300570B2B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C4EE924C7881300570B2B /* DetailViewController.m */; };
+		496C4EED24C7B23F00570B2B /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C4EEC24C7B23F00570B2B /* NavigationHelper.m */; };
+		496C4EF124C7D3A500570B2B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C4EF024C7D3A500570B2B /* Constants.m */; };
 		498D39BC24B25D9400C18CCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498D39BB24B25D9400C18CCD /* AppDelegate.m */; };
 		498D39BF24B25D9400C18CCD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498D39BE24B25D9400C18CCD /* SceneDelegate.m */; };
 		498D39C524B25D9400C18CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498D39C324B25D9400C18CCD /* Main.storyboard */; };
@@ -32,6 +35,12 @@
 		4919196024B539A1008B7E6F /* MovieCategoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCategoryTableViewCell.m; sourceTree = "<group>"; };
 		4919196224B54526008B7E6F /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		4919196324B54526008B7E6F /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		496C4EE824C7881300570B2B /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		496C4EE924C7881300570B2B /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		496C4EEB24C7B23F00570B2B /* NavigationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationHelper.h; sourceTree = "<group>"; };
+		496C4EEC24C7B23F00570B2B /* NavigationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationHelper.m; sourceTree = "<group>"; };
+		496C4EEF24C7D3A500570B2B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		496C4EF024C7D3A500570B2B /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		498D39B724B25D9400C18CCD /* MeetFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		498D39BA24B25D9400C18CCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		498D39BB24B25D9400C18CCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +82,8 @@
 			children = (
 				4919195424B4EF10008B7E6F /* Movie.h */,
 				4919195524B4EF10008B7E6F /* Movie.m */,
+				496C4EEB24C7B23F00570B2B /* NavigationHelper.h */,
+				496C4EEC24C7B23F00570B2B /* NavigationHelper.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -100,6 +111,24 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		496C4EE724C787ED00570B2B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				496C4EE824C7881300570B2B /* DetailViewController.h */,
+				496C4EE924C7881300570B2B /* DetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		496C4EEE24C7D33500570B2B /* Commun */ = {
+			isa = PBXGroup;
+			children = (
+				496C4EEF24C7D3A500570B2B /* Constants.h */,
+				496C4EF024C7D3A500570B2B /* Constants.m */,
+			);
+			path = Commun;
+			sourceTree = "<group>";
+		};
 		498D39AE24B25D9400C18CCD = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +150,8 @@
 		498D39B924B25D9400C18CCD /* MeetFlix */ = {
 			isa = PBXGroup;
 			children = (
+				496C4EEE24C7D33500570B2B /* Commun */,
+				496C4EE724C787ED00570B2B /* Detail */,
 				4919195324B4EE99008B7E6F /* Classes */,
 				498D39D324B25DBC00C18CCD /* application */,
 				4919195724B514B6008B7E6F /* Home */,
@@ -266,14 +297,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496C4EF124C7D3A500570B2B /* Constants.m in Sources */,
 				498D39BC24B25D9400C18CCD /* AppDelegate.m in Sources */,
 				4919196124B539A1008B7E6F /* MovieCategoryTableViewCell.m in Sources */,
+				496C4EEA24C7881300570B2B /* DetailViewController.m in Sources */,
 				4919195D24B51549008B7E6F /* HomePresenter.m in Sources */,
 				4919196424B54526008B7E6F /* MovieCollectionViewCell.m in Sources */,
 				4919195A24B51509008B7E6F /* HomeTableViewController.m in Sources */,
 				498D39CD24B25D9900C18CCD /* main.m in Sources */,
 				4919195624B4EF10008B7E6F /* Movie.m in Sources */,
 				498D39BF24B25D9400C18CCD /* SceneDelegate.m in Sources */,
+				496C4EED24C7B23F00570B2B /* NavigationHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

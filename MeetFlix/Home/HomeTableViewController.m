@@ -9,7 +9,8 @@
 #import "HomeTableViewController.h"
 #import <SDWebImage/SDWebImage.h>
 #import "MovieCategoryTableViewCell.h"
-
+#import "DetailViewController.h"
+#import "Constants.h"
 
 @interface HomeTableViewController ()
 
@@ -25,6 +26,12 @@ HomePresenter * presenter;
     
     presenter = [[HomePresenter alloc] initWithPresenter: self];
     [presenter loadData];
+
+    // adding an observer to navigate for detail
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(showDetail:)
+                                                 name: NotificationShowDetail
+                                               object: nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -49,6 +56,20 @@ HomePresenter * presenter;
     [_imgCover sd_setImageWithURL: [NSURL URLWithString: presenter.movies[6].coverURL]];
     
     NSLog(@"%@", presenter.movies[0].title);
+}
+
+- (void) showDetail: (NSNotification *)notification {
+    
+    NSDictionary *dict = notification.userInfo;
+    Movie *movie = [dict valueForKey:@"movie"];
+
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName: @"Main"
+                                                          bundle: nil];
+    DetailViewController * detailViewController = [storyboard instantiateViewControllerWithIdentifier: @"DetailView"];
+    
+    [self presentViewController: detailViewController
+                       animated: YES
+                     completion: nil];
 }
 
 #pragma mark - HomePresenterDelegate

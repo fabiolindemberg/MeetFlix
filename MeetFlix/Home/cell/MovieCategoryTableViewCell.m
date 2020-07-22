@@ -8,6 +8,8 @@
 
 #import "MovieCategoryTableViewCell.h"
 #import "MovieCollectionViewCell.h"
+#import "DetailViewController.h"
+#import "Constants.h"
 
 @implementation MovieCategoryTableViewCell
 
@@ -44,6 +46,16 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(133.33, 200);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Movie * movie = self.presenter.movies[indexPath.row];
+
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:movie forKey:@"movie"];
+    [[NSNotificationCenter defaultCenter] postNotificationName: NotificationShowDetail
+                                                        object: movie
+                                                      userInfo: dict];
 }
 
 @end

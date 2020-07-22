@@ -11,7 +11,8 @@
         <!--Navigation Controller-->
         <scene sceneID="8cq-cE-cR0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y3c-bv-igy" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmZ-bH-uCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="y3c-bv-igy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="W7K-DR-POb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -22,7 +23,6 @@
                         <segue destination="fYG-AB-OMm" kind="relationship" relationship="rootViewController" id="m2O-At-s3g"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bmZ-bH-uCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-742" y="113"/>
         </scene>
@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="46.376811594202906" y="111.83035714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="LiE-SX-K3t">
             <objects>
-                <viewController id="3Pa-aY-xWz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailView" id="3Pa-aY-xWz" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="50n-t5-k5T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
