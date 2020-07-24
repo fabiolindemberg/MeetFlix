@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		4919195624B4EF10008B7E6F /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919195524B4EF10008B7E6F /* Movie.m */; };
 		4919195A24B51509008B7E6F /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919195924B51509008B7E6F /* HomeTableViewController.m */; };
-		4919195D24B51549008B7E6F /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919195C24B51549008B7E6F /* HomePresenter.m */; };
 		4919196124B539A1008B7E6F /* MovieCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919196024B539A1008B7E6F /* MovieCategoryTableViewCell.m */; };
 		4919196424B54526008B7E6F /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919196324B54526008B7E6F /* MovieCollectionViewCell.m */; };
+		494A932124C92C9500CB2F65 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 494A932024C92C9500CB2F65 /* Category.m */; };
+		494A932724C93A4800CB2F65 /* CategoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494A932624C93A4800CB2F65 /* CategoryHeader.xib */; };
+		494A932A24C93AE800CB2F65 /* CategoryHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 494A932924C93AE800CB2F65 /* CategoryHeader.m */; };
+		494A933224C9AF7C00CB2F65 /* PreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494A933124C9AF7C00CB2F65 /* PreviewCollectionViewCell.m */; };
+		49527C3724CA5CB800965276 /* RecomendationsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49527C3624CA5CB800965276 /* RecomendationsCell.m */; };
 		496C4EEA24C7881300570B2B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C4EE924C7881300570B2B /* DetailViewController.m */; };
-		496C4EED24C7B23F00570B2B /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C4EEC24C7B23F00570B2B /* NavigationHelper.m */; };
 		496C4EF124C7D3A500570B2B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C4EF024C7D3A500570B2B /* Constants.m */; };
 		498D39BC24B25D9400C18CCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498D39BB24B25D9400C18CCD /* AppDelegate.m */; };
 		498D39BF24B25D9400C18CCD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498D39BE24B25D9400C18CCD /* SceneDelegate.m */; };
@@ -21,6 +24,7 @@
 		498D39C724B25D9900C18CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498D39C624B25D9900C18CCD /* Assets.xcassets */; };
 		498D39CA24B25D9900C18CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498D39C824B25D9900C18CCD /* LaunchScreen.storyboard */; };
 		498D39CD24B25D9900C18CCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 498D39CC24B25D9900C18CCD /* main.m */; };
+		49FD3AE924CA726A00A8EFC0 /* UIApplication+TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD3AE824CA726A00A8EFC0 /* UIApplication+TopViewController.m */; };
 		510771DA8A9A447477E4D657 /* Pods_MeetFlix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D490ABE6F29BD4B9A65A043C /* Pods_MeetFlix.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,16 +33,21 @@
 		4919195524B4EF10008B7E6F /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		4919195824B51509008B7E6F /* HomeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		4919195924B51509008B7E6F /* HomeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
-		4919195B24B51549008B7E6F /* HomePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePresenter.h; sourceTree = "<group>"; };
-		4919195C24B51549008B7E6F /* HomePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePresenter.m; sourceTree = "<group>"; };
 		4919195F24B539A1008B7E6F /* MovieCategoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCategoryTableViewCell.h; sourceTree = "<group>"; };
 		4919196024B539A1008B7E6F /* MovieCategoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCategoryTableViewCell.m; sourceTree = "<group>"; };
 		4919196224B54526008B7E6F /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		4919196324B54526008B7E6F /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		494A931F24C92C9500CB2F65 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		494A932024C92C9500CB2F65 /* Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		494A932624C93A4800CB2F65 /* CategoryHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryHeader.xib; sourceTree = "<group>"; };
+		494A932824C93AE800CB2F65 /* CategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
+		494A932924C93AE800CB2F65 /* CategoryHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryHeader.m; sourceTree = "<group>"; };
+		494A933024C9AF7C00CB2F65 /* PreviewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		494A933124C9AF7C00CB2F65 /* PreviewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewCollectionViewCell.m; sourceTree = "<group>"; };
+		49527C3524CA5CB800965276 /* RecomendationsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecomendationsCell.h; sourceTree = "<group>"; };
+		49527C3624CA5CB800965276 /* RecomendationsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecomendationsCell.m; sourceTree = "<group>"; };
 		496C4EE824C7881300570B2B /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		496C4EE924C7881300570B2B /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		496C4EEB24C7B23F00570B2B /* NavigationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationHelper.h; sourceTree = "<group>"; };
-		496C4EEC24C7B23F00570B2B /* NavigationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationHelper.m; sourceTree = "<group>"; };
 		496C4EEF24C7D3A500570B2B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		496C4EF024C7D3A500570B2B /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		498D39B724B25D9400C18CCD /* MeetFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +60,8 @@
 		498D39C924B25D9900C18CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		498D39CB24B25D9900C18CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498D39CC24B25D9900C18CCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49FD3AE724CA726A00A8EFC0 /* UIApplication+TopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TopViewController.h"; sourceTree = "<group>"; };
+		49FD3AE824CA726A00A8EFC0 /* UIApplication+TopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TopViewController.m"; sourceTree = "<group>"; };
 		97418FE1AAA9EE377C1C0E50 /* Pods-MeetFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetFlix.release.xcconfig"; path = "Target Support Files/Pods-MeetFlix/Pods-MeetFlix.release.xcconfig"; sourceTree = "<group>"; };
 		CFE0E9BC55B0EFDB5BD692E8 /* Pods-MeetFlix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetFlix.debug.xcconfig"; path = "Target Support Files/Pods-MeetFlix/Pods-MeetFlix.debug.xcconfig"; sourceTree = "<group>"; };
 		D490ABE6F29BD4B9A65A043C /* Pods_MeetFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,10 +91,8 @@
 		4919195324B4EE99008B7E6F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4919195424B4EF10008B7E6F /* Movie.h */,
-				4919195524B4EF10008B7E6F /* Movie.m */,
-				496C4EEB24C7B23F00570B2B /* NavigationHelper.h */,
-				496C4EEC24C7B23F00570B2B /* NavigationHelper.m */,
+				49FD3AE724CA726A00A8EFC0 /* UIApplication+TopViewController.h */,
+				49FD3AE824CA726A00A8EFC0 /* UIApplication+TopViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -91,22 +100,67 @@
 		4919195724B514B6008B7E6F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4919195E24B53985008B7E6F /* cell */,
+				494A932C24C9AEDA00CB2F65 /* PreviewCell */,
+				494A932224C92EEF00CB2F65 /* CategoryCell */,
+				494A932B24C9AE4500CB2F65 /* CategoryHeader */,
+				4919195E24B53985008B7E6F /* MovieCell */,
 				4919195824B51509008B7E6F /* HomeTableViewController.h */,
 				4919195924B51509008B7E6F /* HomeTableViewController.m */,
-				4919195B24B51549008B7E6F /* HomePresenter.h */,
-				4919195C24B51549008B7E6F /* HomePresenter.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		4919195E24B53985008B7E6F /* cell */ = {
+		4919195E24B53985008B7E6F /* MovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				4919196224B54526008B7E6F /* MovieCollectionViewCell.h */,
+				4919196324B54526008B7E6F /* MovieCollectionViewCell.m */,
+			);
+			path = MovieCell;
+			sourceTree = "<group>";
+		};
+		494A932224C92EEF00CB2F65 /* CategoryCell */ = {
 			isa = PBXGroup;
 			children = (
 				4919195F24B539A1008B7E6F /* MovieCategoryTableViewCell.h */,
 				4919196024B539A1008B7E6F /* MovieCategoryTableViewCell.m */,
-				4919196224B54526008B7E6F /* MovieCollectionViewCell.h */,
-				4919196324B54526008B7E6F /* MovieCollectionViewCell.m */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		494A932B24C9AE4500CB2F65 /* CategoryHeader */ = {
+			isa = PBXGroup;
+			children = (
+				494A932624C93A4800CB2F65 /* CategoryHeader.xib */,
+				494A932824C93AE800CB2F65 /* CategoryHeader.h */,
+				494A932924C93AE800CB2F65 /* CategoryHeader.m */,
+			);
+			path = CategoryHeader;
+			sourceTree = "<group>";
+		};
+		494A932C24C9AEDA00CB2F65 /* PreviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				494A933024C9AF7C00CB2F65 /* PreviewCollectionViewCell.h */,
+				494A933124C9AF7C00CB2F65 /* PreviewCollectionViewCell.m */,
+			);
+			path = PreviewCell;
+			sourceTree = "<group>";
+		};
+		49527C3324CA15FA00965276 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				496C4EE724C787ED00570B2B /* Detail */,
+				4919195724B514B6008B7E6F /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		49527C3424CA5C9F00965276 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				49527C3524CA5CB800965276 /* RecomendationsCell.h */,
+				49527C3624CA5CB800965276 /* RecomendationsCell.m */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -114,6 +168,7 @@
 		496C4EE724C787ED00570B2B /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				49527C3424CA5C9F00965276 /* cell */,
 				496C4EE824C7881300570B2B /* DetailViewController.h */,
 				496C4EE924C7881300570B2B /* DetailViewController.m */,
 			);
@@ -150,13 +205,13 @@
 		498D39B924B25D9400C18CCD /* MeetFlix */ = {
 			isa = PBXGroup;
 			children = (
-				496C4EEE24C7D33500570B2B /* Commun */,
-				496C4EE724C787ED00570B2B /* Detail */,
-				4919195324B4EE99008B7E6F /* Classes */,
 				498D39D324B25DBC00C18CCD /* application */,
-				4919195724B514B6008B7E6F /* Home */,
-				498D39C324B25D9400C18CCD /* Main.storyboard */,
+				49FD3AE624CA724C00A8EFC0 /* Entities */,
+				4919195324B4EE99008B7E6F /* Classes */,
+				496C4EEE24C7D33500570B2B /* Commun */,
+				49527C3324CA15FA00965276 /* Modules */,
 				498D39CC24B25D9900C18CCD /* main.m */,
+				498D39C324B25D9400C18CCD /* Main.storyboard */,
 			);
 			path = MeetFlix;
 			sourceTree = "<group>";
@@ -173,6 +228,17 @@
 				498D39CB24B25D9900C18CCD /* Info.plist */,
 			);
 			path = application;
+			sourceTree = "<group>";
+		};
+		49FD3AE624CA724C00A8EFC0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4919195424B4EF10008B7E6F /* Movie.h */,
+				4919195524B4EF10008B7E6F /* Movie.m */,
+				494A931F24C92C9500CB2F65 /* Category.h */,
+				494A932024C92C9500CB2F65 /* Category.m */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		9B365735B446A242D5061C63 /* Frameworks */ = {
@@ -244,6 +310,7 @@
 			files = (
 				498D39CA24B25D9900C18CCD /* LaunchScreen.storyboard in Resources */,
 				498D39C724B25D9900C18CCD /* Assets.xcassets in Resources */,
+				494A932724C93A4800CB2F65 /* CategoryHeader.xib in Resources */,
 				498D39C524B25D9400C18CCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,17 +364,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49527C3724CA5CB800965276 /* RecomendationsCell.m in Sources */,
+				49FD3AE924CA726A00A8EFC0 /* UIApplication+TopViewController.m in Sources */,
 				496C4EF124C7D3A500570B2B /* Constants.m in Sources */,
 				498D39BC24B25D9400C18CCD /* AppDelegate.m in Sources */,
 				4919196124B539A1008B7E6F /* MovieCategoryTableViewCell.m in Sources */,
 				496C4EEA24C7881300570B2B /* DetailViewController.m in Sources */,
-				4919195D24B51549008B7E6F /* HomePresenter.m in Sources */,
+				494A933224C9AF7C00CB2F65 /* PreviewCollectionViewCell.m in Sources */,
+				494A932A24C93AE800CB2F65 /* CategoryHeader.m in Sources */,
 				4919196424B54526008B7E6F /* MovieCollectionViewCell.m in Sources */,
 				4919195A24B51509008B7E6F /* HomeTableViewController.m in Sources */,
+				494A932124C92C9500CB2F65 /* Category.m in Sources */,
 				498D39CD24B25D9900C18CCD /* main.m in Sources */,
 				4919195624B4EF10008B7E6F /* Movie.m in Sources */,
 				498D39BF24B25D9400C18CCD /* SceneDelegate.m in Sources */,
-				496C4EED24C7B23F00570B2B /* NavigationHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
